@@ -1,21 +1,15 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-    * {
+
+    *{
         margin: 0;
         padding: 0;
-        font-family: 'Nunito', sans-serif;
-        box-sizing:  border-box;
     }
 
-    body {
-        font-family: 'Nunito', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #81259D;
+    body{
+        margin: 0; /* Remove margens padrão */
+        height: 100vh; /* Define a altura para ocupar toda a tela */
+        background: radial-gradient(circle, #219EBC 20%, #8ECAE6 80%);
     }
-
-    input, button, textarea, h1, h2, h3, h4, h5, h6 {
-        font-family: 'Nunito', sans-serif;
-    }
-`
+`;
